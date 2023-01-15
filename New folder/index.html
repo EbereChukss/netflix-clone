@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homePage.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Owl Carousel css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- Owl Carousel css-->
+
+    <!-- jquery css-->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery css-->
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="home">
+      <div class="headerbg">
+        <header>
+          <div class="container">
+            <div class="navbar flex1">
+              <div class="logo">
+                <img src="image/logo.png" alt="" />
+              </div>
+
+              <nav>
+                <ul id="menuitem">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="profile.html">Profile</a></li>
+                  <li><a href="index.html">Landing Page</a></li>
+                  <li><a href="signIn.html">SignIn</a></li>
+                </ul>
+              </nav>
+              <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+          </div>
+        </header>
+
+        <div class="home_content mtop">
+          <div class="container">
+            <div class="left">
+              <h1>CLASH OF THE TITIANS</h1>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popular mtop">
+        <div class="container">
+          <div class="heading flex1">
+            <h2>Most Popular</h2>
+          </div>
+
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="image/MoviePoster (1).png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="image/MoviePoster (2).png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="image/MoviePoster (3).png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="image/MoviePoster (4).png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="image/MoviePoster (6).png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="image/MoviePoster (7).png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="image/MoviePoster (8).png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var menuitem = document.getElementById("menuitem");
+      menuitem.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (menuitem.style.maxHeight == "0px") {
+          menuitem.style.maxHeight = "200px";
+        } else {
+          menuitem.style.maxHeight = "0px";
+        }
+      }
+
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 50);
+      });
+    </script>
+
+    <section class="popular mtop">
+      <div class="container">
+        <div class="heading flex1">
+          <h2>Trending</h2>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (1).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (2).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (3).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (4).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (6).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (7).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (8).png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular mtop">
+      <div class="container">
+        <div class="heading flex1">
+          <h2>Most Viewed</h2>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (9).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (10).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (11).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (12).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (13).png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular mtop">
+      <div class="container">
+        <div class="heading flex1">
+          <h2>Trillers</h2>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+          <div>
+            <img src="image/Vector ().png" alt="" style="width: 60px;" />
+          </div>
+
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (14).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="image/Vector (1).png" alt="" style="width: 100px" />
+          </div>
+
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (15).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="image/Vector (2).png" alt="" style="width: 100px" />
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (16).png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular mtop">
+      <div class="container">
+        <div class="heading flex1">
+          <h2>Carton</h2>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (17).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (18).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (19).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (20).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (21).png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular mtop">
+      <div class="container">
+        <div class="heading flex1">
+          <h2>Sci-fi</h2>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (9).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (10).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (11).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (12).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="imgBox">
+                <img src="image/MoviePoster (13).png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Owl Carousel -->
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        responsive: {
+          411: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+    </script>
+
+    <section class="new_realase top">
+      <div class="container">
+        <div class="owl-carousel owl-carousel2 owl-theme"></div>
+      </div>
+    </section>
+
+    <script>
+      $(".owl-carousel2").owlCarousel({
+        loop: true,
+        margin: 20,
+        dots: true,
+        items: 1,
+      });
+    </script>
+
+    <!-- paxi mate ko lai aata hai-->
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        responsive: {
+          414: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+    </script>
+    -->
+
+    <footer>
+      <div class="container mtop">
+        <div class="box">
+          <div class="icon">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-youtube-square"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Explore</h2>
+          <div class="flex">
+            <ul>
+              <li>Home</li>
+              <li>Tv Shows</li>
+              <li>Actors</li>
+              <li>Celebrity</li>
+            </ul>
+            <ul class="ul">
+              <li>Movie</li>
+              <li>Video</li>
+              <li>Basketball</li>
+              <li>Coress</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Company</h2>
+          <div class="flex">
+            <ul>
+              <li>Company</li>
+              <li>Terms of Use</li>
+              <li>Contact us</li>
+              <li>Our Team</li>
+            </ul>
+            <ul class="ul">
+              <li>Privacy Policy</li>
+              <li>Helps Center</li>
+              <li>Subscribe</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </body>
+</html>
